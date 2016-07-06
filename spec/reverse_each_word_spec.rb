@@ -11,8 +11,8 @@ describe '#reverse_each_word' do
     expect(reverse_each_word(sentence2)).to eq("iH ,niaga tsuj gnikam erus s'ti !desrever")
   end
 
-  let(:file_contents) { File.read(File.join(File.dirname(__FILE__), '..', 'reverse_each_word.rb')) }
   it 'uses .collect' do
-    expect(file_contents).to include(".collect")
+    file = File.read('./reverse_each_word.rb')
+    expect(file).to include(".collect")
   end
 end
